@@ -25,7 +25,7 @@ export default function Intro({ onEnter }) {
             whileTap={{ scale: 0.95 }}
             onClick={handleClick}
             className="fixed inset-0 w-full h-full flex items-center justify-center
-             text-4xl font-bold tracking-wide text-white
+             text-3xl font-demibold tracking-wide text-white
              bg-transparent backdrop-blur-sm
              transition-all duration-300"
           >

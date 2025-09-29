@@ -78,7 +78,6 @@ export default function BioCard() {
           </div>
         </div>
 
-
         <p className="mt-4 text-gray-300 leading-relaxed">
           self-taught dev : beginner : ui designer
         </p>
@@ -99,7 +98,7 @@ export default function BioCard() {
             className="flex items-center space-x-3 px-4 py-2 bg-white/10 rounded-lg hover:bg-white/20 transition"
           >
             <FaDiscord className="text-xl text-indigo-400" />
-            <span>Discord</span>
+            <span>Discord Server</span>
           </a>
 
           <a
