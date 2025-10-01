@@ -82,6 +82,35 @@ export default function BioCard() {
           self-taught dev : beginner : ui designer
         </p>
 
+        {spotify && (
+          <div className="mt-4 relative p-4 rounded-xl overflow-hidden bg-neutral-800">
+            <img
+              src={spotify.album_art_url}
+              alt="album art bg"
+              className="absolute inset-0 w-full h-full object-cover blur-lg opacity-70"
+            />
+
+            <div className="relative flex items-center space-x-3">
+              <img
+                src={spotify.album_art_url}
+                alt="album art"
+                className="w-14 h-14 rounded-md shadow-md"
+              />
+
+              <div className="truncate">
+                <p className="text-sm font-semibold text-white truncate">
+                  {spotify.song}
+                </p>
+                <p className="text-xs text-gray-200 truncate">
+                  {spotify.artist}
+                </p>
+              </div>
+
+              <FaSpotify className="ml-auto text-green-400 text-xl drop-shadow" />
+            </div>
+          </div>
+        )}
+
         <div className="mt-8 flex justify-center space-x-6">
           <a
             href="https://youtube.com/@juggurtrap"
@@ -113,35 +142,6 @@ export default function BioCard() {
             <FaGlobe className="text-3xl" />
           </a>
         </div>
-
-        {spotify && (
-          <div className="mt-4 relative p-4 rounded-xl overflow-hidden bg-neutral-800">
-            <img
-              src={spotify.album_art_url}
-              alt="album art bg"
-              className="absolute inset-0 w-full h-full object-cover blur-lg opacity-70"
-            />
-
-            <div className="relative flex items-center space-x-3">
-              <img
-                src={spotify.album_art_url}
-                alt="album art"
-                className="w-14 h-14 rounded-md shadow-md"
-              />
-
-              <div className="truncate">
-                <p className="text-sm font-semibold text-white truncate">
-                  {spotify.song}
-                </p>
-                <p className="text-xs text-gray-200 truncate">
-                  {spotify.artist}
-                </p>
-              </div>
-
-              <FaSpotify className="ml-auto text-green-400 text-xl drop-shadow" />
-            </div>
-          </div>
-        )}
       </div>
     </Tilt>
   );
