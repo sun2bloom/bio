@@ -82,32 +82,35 @@ export default function BioCard() {
           self-taught dev : beginner : ui designer
         </p>
 
-        <div className="mt-6 flex flex-col space-y-3">
+        <div className="mt-8 flex justify-center space-x-6">
           <a
             href="https://youtube.com/@juggurtrap"
             target="_blank"
-            className="flex items-center space-x-3 px-4 py-2 bg-white/10 rounded-lg hover:bg-white/20 transition"
+            className="p-3 rounded-full bg-transparent text-gray-400 
+               hover:text-red-500 hover:scale-125 hover:shadow-[0_0_20px_rgba(255,0,0,0.7)] 
+               transition transform duration-300"
           >
-            <FaYoutube className="text-xl" />
-            <span>YouTube</span>
+            <FaYoutube className="text-3xl" />
           </a>
 
           <a
             href="https://discord.gg/2UbqAAjYZ6"
             target="_blank"
-            className="flex items-center space-x-3 px-4 py-2 bg-white/10 rounded-lg hover:bg-white/20 transition"
+            className="p-3 rounded-full bg-transparent text-gray-400 
+               hover:text-indigo-400 hover:scale-125 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] 
+               transition transform duration-300"
           >
-            <FaDiscord className="text-xl text-indigo-400" />
-            <span>Discord Server</span>
+            <FaDiscord className="text-3xl" />
           </a>
 
           <a
             href="https://getfluxus.vercel.app/"
             target="_blank"
-            className="flex items-center space-x-3 px-4 py-2 bg-white/10 rounded-lg hover:bg-white/20 transition"
+            className="p-3 rounded-full bg-transparent text-gray-400 
+               hover:text-green-400 hover:scale-125 hover:shadow-[0_0_20px_rgba(34,197,94,0.7)] 
+               transition transform duration-300"
           >
-            <FaGlobe className="text-xl text-green-400" />
-            <span>Fluxus</span>
+            <FaGlobe className="text-3xl" />
           </a>
         </div>
 
