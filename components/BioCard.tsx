@@ -46,7 +46,7 @@ export default function BioCard() {
       tiltMaxAngleX={15}
       tiltMaxAngleY={15}
       scale={1.05}
-      transitionSpeed={250}
+      transitionSpeed={1000}
       className="w-[600px] p-6 rounded-2xl bg-neutral-900 shadow-lg border border-white/10 flex flex-col justify-between"
     >
       <div>
