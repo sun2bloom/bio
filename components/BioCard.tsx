@@ -82,35 +82,37 @@ export default function BioCard() {
           self-taught dev : beginner : ui designer
         </p>
 
-        {spotify && (
-          <div className="mt-4 relative p-4 rounded-xl overflow-hidden bg-neutral-800">
+        <div className="mt-6">
+          <div className="flex items-center space-x-3 bg-neutral-800/80 rounded-xl p-3 border border-white/10">
             <img
-              src={spotify.album_art_url}
-              alt="album art bg"
-              className="absolute inset-0 w-full h-full object-cover blur-lg opacity-70"
+              src="https://cdn.discordapp.com/avatars/1198458819366359044/a5246d6402c36aeb8342dbfc8ec0c7d4?size=1024"
+              alt="status avatar"
+              className="w-12 h-12 rounded-full"
             />
 
-            <div className="relative flex items-center space-x-3">
-              <img
-                src={spotify.album_art_url}
-                alt="album art"
-                className="w-14 h-14 rounded-md shadow-md"
-              />
-
-              <div className="truncate">
-                <p className="text-sm font-semibold text-white truncate">
-                  {spotify.song}
-                </p>
-                <p className="text-xs text-gray-200 truncate">
-                  {spotify.artist}
-                </p>
+            <div className="flex flex-col">
+              <div className="flex items-center space-x-1">
+                <span className="font-medium text-white">velourgraves</span>
               </div>
 
-              <FaSpotify className="ml-auto text-green-400 text-xl drop-shadow" />
+              {!spotify ? (
+                <p className="text-sm text-gray-400">doing nothing</p>
+              ) : (
+                <div className="flex items-center space-x-2">
+                  <img
+                    src={spotify.album_art_url}
+                    alt="album art"
+                    className="w-5 h-5 rounded-sm"
+                  />
+                  <p className="text-sm text-gray-300 truncate max-w-[180px]">
+                    Listening to {spotify.song} – {spotify.artist}
+                  </p>
+                </div>
+              )}
             </div>
           </div>
-        )}
-
+        </div>
+        
         <div className="mt-8 flex justify-center space-x-6">
           <a
             href="https://youtube.com/@juggurtrap"
