@@ -104,7 +104,7 @@ export default function BioCard() {
                     alt="album art"
                     className="w-5 h-5 rounded-sm"
                   />
-                  <p className="text-sm text-gray-300 truncate max-w-[180px]">
+                  <p className="text-sm text-gray-300 truncate max-w-[500px]">
                     Listening to {spotify.song} – {spotify.artist}
                   </p>
                 </div>
